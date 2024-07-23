@@ -1,0 +1,28 @@
+ body {
+     font: 11pt/14pt Arial sarif;
+     background: #f0f3ea;
+     color: #6a835e;
+ }
+
+ h1 {
+     color: #2f7fb2;
+ }
+
+ h2 {
+     color: #7f6a49;
+ }
+
+@media print {
+    html, body {
+        height: 297mm;
+        width: 210mm;
+    }
+    body{
+        background-color: white;
+        font: 12pt  Tahoma Times, sarif;
+        color: black;
+    }
+    h1, h2{
+        color: black;
+    }
+}

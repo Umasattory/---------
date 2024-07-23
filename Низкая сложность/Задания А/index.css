@@ -1,0 +1,610 @@
+.simb {
+    color: red;
+    vertical-align: -5px;
+    transform: rotate(2deg);
+}
+/* ------------------------ ----- -------------------------------- */
+.android{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 5px rgba(155, 153, 153, 0.8) inset;
+}
+/* ------------------------ ----- -------------------------------- */
+h1.headText {
+    color: rgb(10, 138, 31);
+}
+p.contText{
+    text-indent: 40px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+/* ------------------------ ----- -------------------------------- */
+.formula {
+    word-spacing: 10px;
+    font-size: larger;
+    font-weight: 700;
+    text-indent: 40px;
+}
+p sub, p sup {
+    font-style: italic;
+}
+/* ------------------------ ----- -------------------------------- */
+.pepper {
+    position: relative;
+    height: 100px;
+    background-color: red;
+}
+.pepperText {
+    position: absolute;
+    bottom: -13px;
+    left: 40px;    
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ------------------------ ----- -------------------------------- */
+.headsText>h1 {
+    color: rgb(155, 90, 6);
+}
+.headsText>h3 {
+    color: rgb(212, 135, 34);
+}
+.headsText>p>a {
+    color: rgb(45, 121, 22);
+    text-decoration: none;
+}
+/* ------------------------ HTML5 --------------------------------1 */
+#container {
+    background-color: rgb(188, 225, 247);
+}
+#container>#header {
+    background-color: rgb(145, 188, 236);
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+    text-transform:uppercase;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: brown;
+    letter-spacing: 5px;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#main>div>h2, #main>div>h3 {
+    text-align: center;
+    color: brown;
+    flex-wrap: nowrap;
+}
+#main>div>h3 {
+    padding-bottom: 30px;
+}
+div#nav {
+    order: 0;
+    border: 1px solid rgb(100, 182, 207);
+    flex-basis: 20%;
+    padding-top: 80px;
+    padding-left: 8px;
+}
+div#nav a {
+    text-decoration: none;
+    font-size: 14px;
+}
+div#aside {
+    border: 1px solid rgb(100, 182, 207);
+    padding-left: 8px;
+    order: 3;
+    flex-basis: 30%;
+}
+div#aside p::first-letter {
+    text-transform: uppercase;
+}
+div#content {
+    border: 1px solid rgb(100, 182, 207);
+    order: 2;
+    flex-grow: 1;
+}
+div#content li::first-letter {
+    list-style: square;
+    text-transform:uppercase;
+}
+#footer {
+    text-align: right;
+    padding: 10px;
+    font-weight: 600;
+}
+/* ------------------------ HTML5 --------------------------------2 */
+
+#container2 {
+    background-color: rgb(245, 206, 206);
+}
+#container2>#header2 {
+    background-color: rgb(245, 202, 196);
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: rgb(25, 91, 146);
+    letter-spacing: 5px;
+}
+#content2, #sidebar {
+    border: 1px solid rgb(248, 182, 182);
+    padding: 0 5px 0 10px;
+}
+#content2 {
+    flex-grow: 1;
+}
+#sidebar {
+    min-width: 200px;
+}
+#sidebar a {
+    text-decoration: none;
+    line-height: 3;
+    font-size: 14px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#content2>h2 {
+    color: blue;
+}
+#content2>p {
+    color:rgb(19, 31, 138);
+    border-bottom: 1px solid;
+}
+
+#footer2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+/* ------------------------ ----- -------------------------------- */
+.simbolText {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    text-indent: 40px;
+    font-size: large;
+    line-height: 1.5;
+}
+.simbolText>p:last-child {
+    text-align: right;
+}
+/* ------------------------ ----- -------------------------------- */
+.cardMask {
+    display: block;
+    max-width: 20%;
+    margin: auto;
+}
+.piky::before {
+    content: "\2660";
+    padding-right: 10px;
+}
+.chress::before {
+    content: "\2663";
+    padding-right: 10px;
+}
+.block::before {
+    content: "\2666";
+    padding-right: 10px;
+}
+.heat::before {
+    content: "\2665";
+    padding-right: 10px;
+}
+/* ------------------------ ----- -------------------------------- */
+.funcBlock {
+    display: block;
+    min-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.funcN>i {
+    font-size: 30px;
+}
+.funcN sub, .funcN sup {
+    font-size: 15px;
+}
+.funcN sup {
+    color:red;
+}
+.funcN sub {
+    color: blue;
+}
+/* ------------------------ ----- -------------------------------- */
+.numMarkedList {
+    max-width: 40%;
+    margin: auto;
+}
+.numMarkedList>ol>li {
+    list-style: upper-roman;
+    font-weight: 700;
+    padding: 5px;
+}
+.numMarkedList>ol>ul>li>a, .numMarkedList>ol>ul>ol>li>a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+}
+/* ------------------------ ----- -------------------------------- */
+.table {
+    width: 60%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+.table>thead>tr>th, .table>tbody>tr>th,
+.table>tfoot>tr>th {
+    padding: 5px;
+    border: 1px solid;
+}
+
+.table>tbody>tr>td {
+    border: 1px solid darkblue;
+    padding: 5px;
+    text-align: right;
+}
+/* ------------------------ optimize ---------------------------- */
+a:link, a:visited {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 11px;
+    color: #3A681A;
+}
+a:hover {    
+    text-decoration: none;
+    color: #5CA22E;
+}
+a:active {
+    color: #DC0000;
+}
+a:hover, a:active {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;   
+}
+.pole {
+    width: 95px;    
+}
+.pole, .pole2 {
+    border: 1px solid #008000;
+    font-size: 11px;
+    background-color: #E7F2D7;
+    height: 17px;
+}
+/* ------------------------ ----- -------------------------------- */
+.tableface, .tableface a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+.tableface a:hover {
+    color: rgb(140, 141, 230);
+    cursor: pointer;
+}
+.tableface>table{
+    width: 970px;
+    border: 1px solid black;
+}
+.tableface tbody>tr>td>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+.tableface tbody>tr>td {
+    background-color: rgb(0, 0, 0);
+}
+.tableface tbody table td {
+    height: 30px;
+    background: none;
+}
+.tableface tbody table {
+    width: 200px;
+}
+.tableface tfoot>tr {
+    height: 20;
+}
+.tableface tfoot>tr>td {
+    text-align: center;
+    background-color: #103898;
+    columns: #FFFFFF;
+}
+/* ------------------------ ----- -------------------------------- */
+.dubleTableFace .dhead {
+    width: 100%;
+    height: 80px;
+    background-image: url(https://pandia.ru/text/78/169/images/image001_331.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    margin-bottom: 10px;
+}
+
+.dubleTableFace div.dmain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: black;
+    align-items: center;
+    text-align: justify;
+}
+.dubleTableFace div.dmain>:nth-child(1) {
+    min-width: 200px;
+}
+.dubleTableFace div.dmain>:nth-child(2) {
+    padding: 20px;
+}
+.dubleTableFace div.dmain>:nth-child(1)>ul>li>a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 2;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+}
+.dubleTableFace div.dmain>:nth-child(1)>ul>li>a:hover {
+    transform: scale(1.2);
+    color: rgb(155, 67, 238);
+}
+.dubleTableFace div.dmain>:nth-child(1)>ul>li {
+    list-style-type: none;
+}
+.dubleTableFace div.dfoot {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #103898;
+    min-height: 20px;
+    padding: 15px;
+}
+/* ------------------------ ----- -------------------------------- */
+.noPadding {
+    width: 300px;
+    padding: 0;
+    text-align: justify;
+}
+.noPadding h1{
+    margin-bottom: -20px;
+    text-align: center;
+}
+/* ------------------------ ----- -------------------------------- */
+.search {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: 3px 0;
+}
+/* ------------------------ ----- -------------------------------- */
+.colorLinks {
+
+    width: 600px;
+    margin: auto;
+}
+.blackBack {
+    width: 100%;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+}
+.blackBack>ul>li {
+    display: inline-block;
+    margin: 10px 20px;
+    transition: 0.2s;    
+}
+.blackBack>ul>li:hover {
+    transform: scale(1.2);
+}
+.blackBack>ul>li>a {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blackBack>ul>li:nth-child(1)>a {
+    color:rgb(247, 90, 129);
+}
+.blackBack>ul>li:nth-child(2)>a {
+    color: rgb(145, 238, 245);
+}
+.blackBack>ul>li:nth-child(3)>a {
+    color: rgb(224, 228, 15);
+}
+.imageBorder1 {
+    max-width: 55%;
+    margin: auto;
+    border: 50px solid blue;
+    border-image: url("../pictures/border.png") 320/1/0.2 round;
+}
+.imageBorder2 {
+    max-width: 55%;
+    margin: auto;
+    border: 50px solid blue;
+    border-image: url("../pictures/border2.png") 300/1/0.2 round;
+}
+.insDelBlock {
+    text-indent: 40px;
+    max-width: 60%;
+    text-align: justify;
+    margin: auto;
+}
+
+.hrefBlock {
+    max-width: 60%;
+    margin: auto;
+}
+.hrefBlock h1{
+    text-align: center;
+    color: #103898;
+}
+.hrefBlock li>a {
+    font-size: 16px;
+    text-decoration: none;
+}
+.hrefBlock li>a:hover {
+    text-decoration: underline;
+}
+.hrefBlock li>a:active {
+    color: red;
+}
+.hrefBlock li {
+    font-size: 19px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: justify;
+}
+.tablePract{
+    min-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+.tablePract tr>td:nth-child(1) {
+    width: 150px;
+}
+.tablePract tr{
+    height: 30px;
+    vertical-align: top;
+    text-align: center;
+}
+.evtushenkoPoem {
+    max-width: 25%;
+    margin: auto;
+    font-size: 13pt;
+
+}
+.y1955 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+.evtushenkoPoem>h2 {
+    font-size: 18pt;
+    color: blue;
+    text-align: center;
+}
+.japanFlag{
+    width: 100%;
+    height: 250px;
+    background-color: aquamarine;
+    padding-top: 60px;
+}
+.japan{
+    box-sizing:border-box;
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    margin: auto;
+    padding-top: 40px;
+    border: 10px solid #1a1818;
+    border-image: 200/1/3 url("../pictures/border2.png") round;
+}
+.flag {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: red;
+}
+.colorTable {
+    max-width: 60%;
+    margin: auto;
+}
+.colorTable>table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+}
+.colorTable>table tr>td:nth-child(1) {
+    background-color: #cf70cf;
+}
+.colorTable>table tr>td:nth-child(2) {
+    background-color: #70cf75;
+}
+.colorTable>table tr>td:nth-child(3) {
+    background-color: #e5e74a;
+}
+.backTextColor {
+    max-width: 60%;
+    outline: 1px solid red;
+    margin: auto;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    background-color: rgb(8, 155, 8);
+}
+.backTextColor>h2 {
+    text-align: center;
+}
+.backTextColor>p {
+    text-align: justify;
+    text-indent: 40px;
+}
+.hoverBlocks {
+    box-sizing: border-box;
+    outline: 1px solid red;    
+    width:600px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.hoverBlocks>div {
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;       
+    margin-left: 10px;
+    transform: 2s;
+}
+.hoverBlocks>div:nth-child(odd) {
+    background-color: red;
+}
+.hoverBlocks>div:nth-child(even) {
+    background-color: rgb(83, 28, 231);
+}
+.hoverBlocks>div:hover {
+    background-color: rgb(219, 238, 45);
+}
+
+/* @keyframes colorChange {
+    from {
+        background-color: rgb(228, 231, 28);
+    }
+    50% {
+        background-color: rgb(172, 159, 207);
+    }
+    to {
+        background-color: rgb(237, 240, 58);
+    }
+}
+
+.hoverBlocks>div:hover {
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+} */

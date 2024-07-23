@@ -1,0 +1,1497 @@
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px; }
+/*----------------------------------------------------------------------------------------------*/
+.bataryCharge {
+    outline: 1px solid red;
+    outline-offset: 5px;
+    width: 80%;
+    height: 220px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(245, 239, 239);
+}
+.bat {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border: 4px solid #000000;
+    margin: 10px auto;
+    border-radius: 8%;
+}
+.bat::after, .bat::before{
+    content: "";
+    position: absolute;
+}
+.bat::after {
+    width: 10px;
+    height: 20px;
+    background-color: #000000;
+    right: -10px;
+    top: 13px;
+}
+.bat::before {
+    height: 100%;
+}
+.law::before {
+    left: 0;
+    width: 33%;
+    background: red;
+}
+.medium::before {
+    left: 0;
+    width: 66%;
+    background: yellow;
+}
+.high::before {
+    left: 0;
+    width: 99%;
+    background: green;
+}
+/*----------------------------------------------------------------------------------------------*/
+.cutConerBlock {
+    outline: 1px solid red;
+    outline-offset: 5px;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(245, 239, 239);
+}
+.cutConder {
+    width: 250px;
+    height: 60px;
+    background: green;
+    margin: auto;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 3.5;
+    color: white;
+    position: relative;
+}
+
+.cutConder::before, 
+.cutConder::after {
+    content: "";
+    position: absolute;
+    background: green;    
+    height: 52px;
+    width: 4px;
+    top: 4px;
+}
+.cutConder::before {
+    right: -4px
+}
+.cutConder::after {
+    left: -4px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.glamButtonBlock {
+    outline: 1px solid red;
+    outline-offset: 5px;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(245, 239, 239);
+}
+
+.glamurBtn {
+    width: 150px;
+    height: 40px;
+    border-color: violet;
+    border-radius: 25px;
+    outline: 2px solid violet;
+    outline-offset: 2px;
+    background: violet;
+    background: linear-gradient(180deg, rgba(255, 139, 239, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 139, 239, 1) 100%);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: large;
+}
+/*----------------------------------------------------------------------------------------------*/
+.buttonGroups {
+    outline: 1px solid red;
+    outline-offset: 5px;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background: rgb(245, 239, 239);
+}
+.buttonGroups>.btn {
+    width: 180px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    background: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.buttonGroups>.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    /*overflow: hidden;*/
+}
+.buttonGroups>.btn:nth-child(1) {
+    background: linear-gradient(rgb(60, 196, 189), white);
+}
+.buttonGroups>.btn:nth-child(2) {
+    background: linear-gradient(rgb(62, 190, 73), rgb(165, 228, 181), rgb(62, 190, 73));
+}
+.buttonGroups>.btn:nth-child(3) {
+    color: white;
+    background: linear-gradient(rgb(213, 232, 252) 5%, rgb(49, 158, 209));
+}
+.buttonGroups>.btn:nth-child(4) {
+    color: white;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 10%, rgba(255, 255, 255, 1) 90%);
+}
+.buttonGroups>.btn:nth-child(4) {
+    color: white;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 10%, rgba(255, 255, 255, 1) 90%);
+}
+.buttonGroups>.btn:nth-child(5) {
+    color: #000000;
+    background: linear-gradient(0deg, rgb(172, 172, 175) 10%, rgb(240, 234, 234) 90%);
+    box-shadow: 3px 3px 1px 0px rgba(167, 173, 177, 0.2);
+    background: linear-gradient();
+}
+.buttonGroups>.btn:nth-child(5):active {
+    color: #000000;
+    background: linear-gradient(0deg, rgb(172, 172, 175) 10%, rgb(240, 234, 234) 90%);
+    box-shadow: 3px 3px 1px 0px rgba(167, 173, 177, 0.2) inset;
+    background: linear-gradient();
+}
+/*----------------------------------------------------------------------------------------------*/
+.coffeBlock {
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    padding-top: 10px;
+    background: rgb(245, 239, 239);
+    position: relative;
+}
+.coffeBlock .choosCont {
+    width: fit-content;
+    margin: 0 10px 10px 280px;
+    padding: 5px;
+    line-height: 1.5;
+}
+.coffeBlock legend {
+    color: rgb(199, 42, 152);
+    font-size: 20px;
+    font-weight: 600;
+}
+.coffeBlock .fieldContent>span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.coffeBlock button {
+    width: 150px;
+    height: 30px;
+    background: rgb(218, 103, 58);
+    background: linear-gradient(0deg, rgba(218, 103, 58, 1) 16%, rgba(190, 53, 152, 0.6) 60%);
+    color: blue;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.coffeBlock button:hover {
+    background: darkred;
+    cursor: pointer;
+    color: aliceblue;
+    transform: scale(1.1);
+
+}
+.field{
+    background-image: url(../pictures/coffeBack.webp);
+    background-repeat: no-repeat;
+    background-position: left -20px bottom 5px;
+    width: 550px;
+    margin: auto;
+}
+.field::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: rgba(187, 229, 153, 0.4)
+}
+.field>legend, .field .fieldContent {
+    position: relative;
+}
+/*----------------------------------------------------------------------------------------------*/
+.dubleBorder {
+    width: 75%;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    padding: 20px;
+}
+
+.blockOut {
+    border: 10px ridge rgb(247, 176, 84);
+    width: 60%;
+    margin: auto;
+}
+/*----------------------------------------------------------------------------------------------*/
+.flippingBlock {
+    width: 75%;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    padding: 20px;
+}
+.imageBox {
+    width: 90%;
+    height: 95%;
+    margin: auto;
+    background-image: url(../pictures/BackFone05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flippers {
+    position: relative;
+    top: 170px;
+}
+.flippers>ul li{
+    list-style: none;
+    color: white;
+    display: inline;
+    padding-right: 18px;
+}
+.flippers>ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;    
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.flippers>ul li:nth-child(3):before {
+    background: rgb(247, 10, 10);
+    cursor: default;
+    box-shadow: 0px 0px 4px 4px rgba(255, 0, 149, 0.6);
+}
+/*----------------------------------------------------------------------------------------------*/
+.progressBox {
+    width: 75%;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    padding: 20px;
+}
+.progressBox .progressBar {
+    margin: auto;
+    width: 500px;
+    height: 20px;
+    border: 1px solid rgb(121, 119, 119);
+    border-radius: 10px;
+    background: rgb(150, 150, 150);
+    background: linear-gradient(180deg, rgba(150, 150, 150, 1) 10%, rgba(255, 255, 255, 0.6839110644257703) 90%);
+    position: relative;
+}
+.progressBox .progressBar::before {
+    content: "";    
+    position: absolute;
+    left: 0;
+    height: 20px;
+    border-radius: 10px;
+    background: rgb(0, 26, 255);
+    box-shadow: 5px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    animation-name: progressMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes progressMove {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+/*----------------------------------------------------------------------------------------------*/
+.rootBox {
+    width: 80%;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+}
+
+.root {
+    border: 1px solid red;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.root>span:nth-child(2) {
+    border-top: 1px solid black;
+}
+/*----------------------------------------------------------------------------------------------*/
+.squareBox {
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+}
+
+.squares {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    position: relative;
+}
+.red {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    background: red;
+    margin: 5px;
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    z-index: 2;
+}
+
+.black {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    background: black;
+    margin: 10px;
+    position: absolute;
+    left: 250px;
+    z-index: 1;
+}
+/*----------------------------------------------------------------------------------------------*/
+.piechartBlock {
+    width: 80%;
+    height: 220px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+}
+.piechart {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: auto;
+    background-image: conic-gradient(
+        green 50deg,
+        lightgreen 20deg 150deg,       
+        green 150deg 0
+    );
+}
+.piechartCont {
+    width: 140px;
+    height: 140px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background: rgb(245, 239, 239);;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 3;
+    vertical-align: middle;
+}
+/*----------------------------------------------------------------------------------------------*/
+.overlaysBlock {
+    width: 80%;
+    height: 220px;
+    text-align: center;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    position: relative;  
+}
+.overlaysBack {
+    width: 90%;
+    height: 50px;
+    background: darkgreen;
+    color: white;
+    margin: auto;
+    text-align: justify;
+    line-height: 2;
+    padding: 0 10px;  
+}
+
+.overlaysAbove {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    /*outline: 1px solid;*/
+    width: 70%;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 5px;
+    background: white;
+}
+/*----------------------------------------------------------------------------------------------*/
+.blocksNumList {
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    text-align: center;
+}
+.numList>li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 5px;
+    box-shadow: -3px -3px 10px 0 rgba(150, 150, 150, 1);
+    background: rgb(255, 254, 254);
+    background: linear-gradient(135deg, rgba(255, 254, 254, 1) 16%, rgba(96, 94, 98, 0.6) 80%);
+}
+/*----------------------------------------------------------------------------------------------*/
+ .pageFlipping {
+    width: 80%;
+    height: 120px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+}
+.item-list {
+    border-bottom: 3px solid rgb(185, 185, 185);
+    padding: 5px 0 1px;
+    
+}
+.pager>li {
+    display: inline;
+    padding: 18px 30px;
+    text-align: center;
+}
+.pager>li:hover, .last:hover, .first {
+    background: rgb(218, 215, 215);
+    border-bottom: 3px solid black;
+}
+.pager>li>a {
+text-decoration: none;
+color: black;
+}
+/*----------------------------------------------------------------------------------------------*/
+.requredFieldsBlock {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+}
+.requredFields {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+.fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 8px;
+}
+.fields>label {
+    width: 70px;
+}
+.fields>input {
+    padding: 5px;
+}
+.requredFields>.btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 20px;
+}
+.fields input:valid+span::after{
+    content: "";
+    inset: 0;    
+    padding: 10px;
+    margin: 5px;
+    line-height: 2;
+    background-image: url('../pictures/ok.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fields input:invalid+span::after {
+    content: "";
+    inset: 0;
+    padding: 10px;
+    margin: 5px;
+    line-height: 2;
+    background-image: url('../pictures/nook.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*----------------------------------------------------------------------------------------------*/
+.michelHelp {
+    width: 80%;
+    height: 330px;
+    margin: auto;
+    padding: 5px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    box-sizing: border-box;
+}
+
+.michelBody {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: #333;
+    padding-top: 20px;
+}
+.michelDiv {
+    outline: 1px solid lightgreen;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    background: red;
+} 
+.michelDiv>img {
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------------------------------------------------------------*/
+.func_ms2Block {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    box-sizing: border-box;
+}
+.func_ms2 {
+    width: 45%;
+    height: 80px;
+    margin: auto;
+    background: #F2E0BE;
+}
+.func_ms2>table {
+    width: 100%;
+    height: 100%;
+    font-size: xx-large;
+    text-align: center;
+}
+.func_ms2>table sup {
+    font-size: 18px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.gomokuBlock {
+    width: 80%;
+    height: 460px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    box-sizing: border-box;
+}
+.gomoku {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    /*outline: 1px solid red;*/
+}
+.gomoku>table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.gomoku>table td {
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    text-align: left;
+}
+
+.gomoku>table>tbody>tr:not(:nth-child(16))>th {
+    text-align: right;
+    padding-right: 30px;
+    width: 20px;
+}
+
+.gomoku>table>tbody>tr:nth-child(16)>th {
+    text-align: center;
+    line-height: 2;
+    padding: 0;
+}
+/*----------------------------------------------------------------------------------------------*/
+.lastBorderBlock {
+    width: 80%;
+    height: 160px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(245, 239, 239);
+    box-sizing: border-box;
+}
+.lastBorder {
+    width: 70%;
+    height: 95%;
+    background: rgb(226, 221, 221);
+    margin: auto;
+}
+.lastBorder>.links {
+    width: 100%;
+    background-color: #f08e76;
+    line-height: 2;
+}
+.lastBorder>.links>a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: aliceblue;
+    font-size: larger;
+    display: inline-block;
+}
+.lastBorder>.links>a:not(:last-child) {
+    border-right: 1px solid rgb(255, 0, 0);
+}
+/*----------------------------------------------------------------------------------------------*/
+.wetherBlock {
+    width: 80%;
+    min-width: 700px;
+    height: 280px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgb(228, 221, 221);
+    box-sizing: border-box;
+}
+.wetherArea {
+    width: 80%;
+    max-width: 550px;
+    height: 98%;
+    margin: auto;
+    background: rgba(250, 244, 233, 0.6);
+}
+.wetherCards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+}
+.wetherCards>.wetherCard:nth-child(1)>.wetherImg {
+        background-image: url('../pictures/wether03.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+.wetherCards>.wetherCard:nth-child(2)>.wetherImg {
+    background-image: url('../pictures/wether01.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wetherCards>.wetherCard:nth-child(3)>.wetherImg {
+    background-image: url('../pictures/wether02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wetherCard {
+    width: 32%;
+    max-width: 175px;
+    transition: 0.2s;
+}
+.wetherCard:hover {
+    box-shadow: 0 0 5px 2px rgba(145, 145, 145, 0.5);
+    transform: translateY(-5px)
+}
+.wetherDate {
+    width: 100%;
+    height: 15%;
+    background: rgb(26, 177, 204);
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+}
+.wetherImg {
+    width: 100%;
+    height: 50%;
+    background: #fff;
+}
+.wetherTemperature {
+    width: 100%;
+    height: 35%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: xxx-large;
+    text-align: center;
+}
+/*----------------------------------------------------------------------------------------------*/
+.rotationFrameBlock {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+}
+
+.rotationFrameAria {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    outline: 1px solid red;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+.frame {
+    position: relative;  /* Относительное позиционирование */
+    display: block; /* Ширина блока равна ширине картинки */
+    width: 150px; height: 150px;
+    margin: auto; /* Задаём пространство вокруг блока */
+    padding: 4px; /* Толщина внутренней рамки */
+    outline: 1px solid #fff; /* Белая рамка вокруг блока */
+    background: #dad6cf; /* Цвет фона */
+    border: 2px double #c2b59d; /* Параметры рамки */
+}
+
+.frame::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -5px; top: -5px; /* Сдвигаем влево и вверх */
+    width: 100%; height: 100%; /* Ширина и высота совпадает с родителем */
+    z-index: -1; /* Ставим под картинку */
+    transform: rotate(-8deg); /* Поворачиваем рамку */
+    background: #dad6cf; /* Цвет фона */
+    border: 2px solid #c2b59d; /* Параметры рамки */
+}
+
+.frame img {
+    display: block; /* Убираем отступ под картинкой */
+    width: 100%; height: 100%;
+}
+/*----------------------------------------------------------------------------------------------*/
+.ratingAdaptBlock {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+}
+.ratingAdaptAria {
+    width: 90%; height: 95%;
+    outline: 1px solid black;
+    padding: 10px;
+    margin: auto;
+}
+.ratingAdapt {
+    width: 95%; height: 40px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(150, 147, 147);
+    border-radius: 5px;
+}
+.raiting, .raitControl {
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.5;
+    color: #fff;
+}
+.raiting {
+    width: 100px; height: 100%;
+    background: rgb(89, 133, 24);
+}
+.raitControl {
+    position: relative;
+    margin: 0 50px;
+    width: 50px; height: 95%;
+}
+.raitControl::before, .raitControl::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.raitControl::after {
+    right: -30px;
+    background-image: url(../pictures/plus.png);    
+}
+.raitControl::before {
+    right: 55px;    
+    background-image: url(../pictures/minus.png);
+}
+/*----------------------------------------------------------------------------------------------*/
+.menuListBlock {
+    width: 80%; height: 200px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+.menuListAria {
+    box-sizing: border-box;
+    width: 90%; height: 170px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 15px 0;
+}
+.menuList {
+    width: 240px; height: 140px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0;
+    color:#e2431c;
+    background: #f5d7a1;
+    box-shadow: 5px 5px rgba(192, 61, 1, 0.87);
+}
+.menuList li {
+    list-style: none;
+    padding-left: 0px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.buttonLinkBlock {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+.buttonLinkAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.buttonLink {
+    width: 200px; height: 30px;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+    font-weight: 600;
+    border: 2px outset rgb(193, 193, 243);
+    border-radius: 5px;
+    background: rgb(169, 195, 235);
+    background: linear-gradient(90deg, rgba(169, 195, 235, 1) 36%, rgba(58, 100, 182, 0.6839110644257703) 68%);
+}
+
+.buttonLink:hover {
+    color: red;
+    cursor: pointer;
+}
+.buttonLink:active {
+    background: rgb(169, 195, 235);
+    background: linear-gradient(90deg, rgba(58, 100, 182, 0.6) 36%, rgba(169, 195, 235, 1) 68%);
+    border: 2px inset rgb(193, 193, 243);
+}
+/*----------------------------------------------------------------------------------------------*/
+.zebraTableBlock {
+    width: 80%;
+    height: 180px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+.zebraTableAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.lux {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid red;
+    width: 400px;
+}
+.lux>tbody>tr>td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid red;
+    text-align: center;
+}
+.lux>tbody>tr>td:nth-child(1) {
+    text-align: left;
+}
+.lux>tbody>tr>th {
+    background: rgb(240, 78, 78);
+}
+.lux>tbody>tr:nth-child(odd){
+    background:rgb(241, 230, 217)
+}
+/*----------------------------------------------------------------------------------------------*/
+.styledBorderBlock {
+    width: 80%;
+    height: 110px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.styledBorderAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.styledBorder {
+    text-align: center;
+    width: 266px; height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    text-transform:uppercase;
+    margin: auto;
+    font-size: 0;
+}
+.styledBorder>.oneStyle {
+    display: inline;
+    font-size: 40px;
+}
+.styledBorder>.oneStyle:first-child {
+    background: #fff;
+    color: black;
+    width: 50%;
+}
+.styledBorder>.oneStyle:last-child {
+    background: black;
+    color: #fff;
+    width: 50%;    
+}
+/*----------------------------------------------------------------------------------------------*/
+.checkBoxesBlock {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.checkBoxesAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.checkBoxForm {
+    width: 200px;
+    margin: auto;
+}
+.checkBoxForm label {
+    margin-left: 5px;
+}
+.checkBoxForm>button {
+    float:right;
+    cursor: pointer;
+}
+.checkBoxForm input[type="checkbox"]:checked + span {
+    background: yellow;
+}
+/*----------------------------------------------------------------------------------------------*/
+.ttxBlock {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.ttxAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.ttx {
+    width: 550px; height: 95%;
+    margin: auto;
+    text-align: center;
+}
+.characters {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;  
+}
+.character {
+    width: 100%; height: 40px;
+    background: rgb(143, 142, 142);
+    margin-bottom: 5px;
+    transform: skewX(-40deg);
+    line-height: 2;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.character>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+.character>div:nth-child(1)>span {
+    color: #fff;
+}
+.character>div:nth-child(2)>div {
+    width: 30px; height: 20px;
+    margin: 10px 5px;
+}
+.character>div:nth-child(2)>div:last-child {
+    margin-right: 20px;
+}
+.characters>.character:first-child>div:last-child>div:nth-child(-n+2),
+.characters>.character:nth-child(2)>div:last-child>div:nth-child(-n+2),
+.characters>.character:last-child>div:last-child>div:nth-child(1) {
+    background: red;
+}
+.characters>.character:first-child>div:last-child>div:nth-child(3),
+.characters>.character:first-child>div:last-child>div:nth-child(4),
+.characters>.character:nth-child(2)>div:last-child>div:nth-child(3) {
+    background: rgb(255, 251, 0);
+}
+.characters>.character:first-child>div:last-child>div:nth-child(n+5) {
+    background: green;
+}
+.characters>.character:nth-child(2)>div:last-child>div:nth-child(n+4),
+.characters>.character:last-child>div:last-child>div:nth-child(n+2) {
+    background: rgb(201, 200, 200);
+}
+/*----------------------------------------------------------------------------------------------*/
+.ragistrationFormBlock {
+    width: 80%; height: 280px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.ragistrationFormAria {
+    box-sizing: border-box;
+    width: 90%; height: 240px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.ragistrationForm {
+    box-sizing: border-box;
+    width: 400px; height: 220px;
+    max-width: 400px; max-height: 220px;
+    border: 2px solid rgb(129, 129, 250);
+    border-radius: 10px;
+    margin: auto;
+    background:rgb(55, 144, 218);
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.ragistrationForm>.head {
+    line-height: 1.8;
+    border-bottom: 1px solid #fff;
+    font-size: 25px;
+}
+.ragistrationForm>label[for="_password"] {
+    padding-left: 125px;
+}
+.ragistrationForm>input[name="_password"] {
+    margin-left: 12px;
+}
+.ragistrationForm>input[name="_email"] {
+    width: 98%;
+}
+.ragistrationForm>input {
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+.ragistrationForm>input:focus{
+    text-decoration: none;
+    outline: 1px solid #f36c4a;
+    outline-offset: 2px
+}
+.ragistrationForm>button {
+    width: 175px; height: 25px;
+    border: 1px outset;
+    border-radius: 5px;
+    background: #f5d7a1;
+    cursor: pointer;
+}
+.ragistrationForm>button:active {
+    border: 1px inset;
+    background: #ecab32;
+}
+/*----------------------------------------------------------------------------------------------*/
+.newtonBinomBlock {
+    width: 80%; height: 210px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.newtonBinomAria {
+    box-sizing: border-box;
+    width: 90%; height: 180px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 10px 0;
+}
+.newtonBinom {
+    outline: 1px solid;
+    outline-offset: 10px;
+    width: 420px; height: 120px;
+    margin: auto;
+    font-size: 20px;
+}
+.newtonBinom>.binom>div:first-child>img {
+    width: 220px;
+    margin-left: 70px;
+}
+.newtonBinom>.binom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*----------------------------------------------------------------------------------------------*/
+.crambsMenuBlock {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.crambsMenuAria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 5px 0;
+}
+.crambsMenu {
+
+    outline-offset: 3px;
+    width: 70%; height: 80%;
+    margin: auto;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.crambsMenu>.crambsList {
+    width: 100%; height: 40px;
+    border-radius: 0 25px 25px 0;
+    background: rgb(231, 231, 231);
+    background: linear-gradient(180deg, rgba(231, 231, 231, 1) 25%, rgba(180, 236, 119, 0.5) 70%);
+
+}
+.crambsMenu>.crambsList li {
+    line-height: 2;
+    list-style: none;
+    display: inline-block;
+    width: 70px; height: 38px;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 5px 2px 10px 0px rgba(34, 60, 80, 0.2);
+    transition: 0.3s;    
+}
+.crambsMenu>.crambsList li:hover {
+    transform: scale(1.1);
+    border-radius: 10px 25px 25px 10px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.coloredCellsTableBlock {
+    width: 80%; height: 250px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.coloredCellsTableAria {
+    box-sizing: border-box;
+    width: 90%; height: 230px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 5px 0;
+}
+.coloredCellsTable {
+    box-sizing: border-box;  
+    width: 550px; height: 98%;
+    margin: auto;
+}
+.coloredCellsTable>.cct {
+    width: 550px; height: 220px;
+    border-collapse: collapse;
+    border: 1px double black;
+}
+.coloredCellsTable>.cct>thead>tr {
+    border: 1px solid black;
+    background: rgb(136, 135, 135);
+    color: #FFF;
+    text-align: center;
+}
+.coloredCellsTable>.cct>tbody>tr>td {
+    border: 1px solid black;
+    padding: 5px;
+}
+.coloredCellsTable>.cct>tbody>tr>td:nth-child(3) {
+    text-align: center;
+}
+.coloredCellsTable>.cct>tbody>tr>td:nth-child(odd) {
+    background: #90ebeb;
+}
+.coloredCellsTable>.cct>tbody>tr>td:nth-child(even) {
+    background:  #ebe290
+}
+/*----------------------------------------------------------------------------------------------*/
+.quoteSpecialBlock {
+    width: 80%; height: 150px;
+    margin: auto;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.quoteSpecialAria {
+    box-sizing: border-box;
+    width: 90%; height: 130px;
+    margin: auto;
+    outline: 1px solid black;
+    padding: 1px;
+}
+.quoteSpecial {
+    margin: auto;
+    position: relative;
+    width: 300px; height: 100px;
+    text-align: justify;
+}
+.quoteSpecial>p:nth-child(2) {
+    text-align: right;
+}
+.quoteSpecial::before {
+    content: "";
+    position: absolute;
+    width: 30px; height: 30px;
+    top: 0; left: -40px;
+    background-image: url(../pictures/openQuote.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.quoteSpecial::after {
+    content: "";
+    position: absolute;
+    width: 30px; height: 30px;
+    bottom: 5px; right: -35px;
+    background-image: url(../pictures/closeQuote.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*----------------------------------------------------------------------------------------------*/
+.stepPassingBlock {
+    box-sizing: border-box;    
+    width: 80%; height: 150px;
+    margin: auto;
+    padding-top: 5px;    
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+}
+.stepPassingAria {
+    box-sizing: border-box;
+    width: 90%; height: 130px;
+    margin: auto; padding: 10px;
+    outline: 1px solid black;
+}
+.stepPassing {
+    position: relative;
+    width: 350px; height: 45px;
+    margin: auto;
+}
+.stepRounds>div {
+    width: 40px; height: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(240, 146, 146);
+    text-align: center;
+    line-height: 2.5;
+    color: #FFF;
+}
+.stepRounds>div:nth-child(-n+3) {
+    background-color: #ace26e;
+}
+.stepRounds>div:nth-child(4) {
+    background: #d48be2;
+}
+.stepRounds>div:nth-child(5) {
+    background: rgb(206, 203, 203);
+    color: #000;
+}
+.stepRounds>div:not(:last-child) {
+    margin-right: 30px;
+}
+.stepLine {
+    border: 2px solid gray;
+    position: absolute;
+    top: 19px;
+    width: 340px;
+    z-index: -1;
+}
+/*----------------------------------------------------------------------------------------------*/
+.excavatorCrawBlock {
+    box-sizing: border-box;
+    width: 80%; height: 300px;
+    margin: auto; padding-top: 5px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+}
+.excavatorCrawAria {
+    box-sizing: border-box;
+    width: 90%; height: 280px;
+    margin: auto; padding: 10px;
+    outline: 1px solid black;
+}
+.excavatorCraw {
+    box-sizing: border-box;
+    outline: auto;
+    width: 550px; height: 240px;
+    margin: auto; padding: 20px;
+    background: black;
+}
+.textAria {
+    box-sizing: border-box;
+    position: relative;
+    width: 450px; height: 200px;
+    margin: auto; padding: 20px 10px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}
+.textAria::before {
+    content: "ЭКГ-5";
+    inset: 0;
+    display: block; position: absolute;
+    width: 100px; height: 30px;
+    color: #ecab32; font-family: sans-serif;
+    font-size: 20px; line-height: 1.5;
+    background: rgb(231, 231, 231);
+    background: linear-gradient(305deg, rgb(255, 255, 255) 30%, rgb(0, 0, 0) 30%);
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+/* 
+.Block {
+    box-sizing: border-box;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding-top: 5px;
+    outline: 1px solid red;
+    outline-offset: 5px;
+    background: rgba(245, 239, 239, 0.5);
+}
+
+.Aria {
+    box-sizing: border-box;
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    padding: 10px;
+    outline: 1px solid black;
+} 
+*/
