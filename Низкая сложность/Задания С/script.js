@@ -408,3 +408,47 @@ glassControl.forEach((item) => {
         }
     })
 })
+
+
+
+
+const quatroPortionList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_portion>.showScreen li'));
+const quatroTimeList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_time>.showScreen li'));
+const quatroDeffList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_dific>.showScreen li'));
+
+console.log(quatroPortionList, quatroTimeList, quatroDeffList)
+
+function quatroFunction(quatroFuncArray) {
+    quatroFuncArray.forEach((item) => {
+        item.addEventListener('mouseenter', (e) => {
+            e.preventDefault();
+            quatroFuncArray.forEach((item)=>item.removeAttribute("style"))
+            item.style = "background: linear-gradient(rgb(161, 161, 161), rgb(255, 255, 255));"
+        })
+    })
+    const interials = quatroFuncArray.filter((el, ind) => ind !== 0 && ind !== quatroFuncArray.length - 1);
+    interials.forEach((item) => {
+        item.addEventListener('mouseenter', (e) => {
+            e.preventDefault();
+            item.nextElementSibling.classList.add("nextScewing");
+            item.previousElementSibling.classList.add("prevScewing");
+        })
+        item.addEventListener('mouseleave', (e) => {
+            e.preventDefault();
+            item.nextElementSibling.removeAttribute("class");
+            item.previousElementSibling.removeAttribute("class")
+        })
+    })
+    quatroFuncArray.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault()
+            quatroFuncArray.forEach(item=>item.removeAttribute("class"))
+            item.classList.add("clickedQuatroItem");
+            item.closest('.quatroItem').querySelector('input').value = quatroFuncArray.indexOf(item);
+        })
+    })
+}
+
+quatroFunction(quatroPortionList);
+quatroFunction(quatroTimeList);
+quatroFunction(quatroDeffList);

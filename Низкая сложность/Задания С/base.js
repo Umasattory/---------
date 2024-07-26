@@ -17,9 +17,4 @@ document.querySelector('.send').addEventListener('click', (e) => {
     console.log(getFieldsFunc(discriptFields));
 });
 
-/* var dataBase = [
-    { name: 'galass1', url: 'https://disk.yandex.ru/i/GJthffUJlZPZZg', direct: 'Фотография Умеда' },
-    { name: 'galass2', url: 'https://disk.yandex.ru/i/b3rTGEnciGy8tg', direct: 'Фотография документы1' },
-    { name: 'galass2', url: 'https://disk.yandex.ru/i/UrzNt876AKwZOg', direct: 'Фотография документы2' }
-] */
 
