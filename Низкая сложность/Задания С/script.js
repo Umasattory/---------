@@ -409,14 +409,9 @@ glassControl.forEach((item) => {
     })
 })
 
-
-
-
 const quatroPortionList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_portion>.showScreen li'));
 const quatroTimeList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_time>.showScreen li'));
 const quatroDeffList = Array.from(document.querySelectorAll('.electronSamelye .elecSam_dific>.showScreen li'));
-
-console.log(quatroPortionList, quatroTimeList, quatroDeffList)
 
 function quatroFunction(quatroFuncArray) {
     quatroFuncArray.forEach((item) => {
