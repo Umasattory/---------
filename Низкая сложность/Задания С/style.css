@@ -406,8 +406,11 @@ table {
 }
 .numListadapted div>p {
     text-align: center;
-    color: auto;
     font: 600 16px/1 sans-serif;
+    margin: 20px;
+}
+.numListadapted ol {
+    padding-left: 45px;
 }
 .numListadapted ol>li {
     font: italic 600 15px/1.5 Arial;
@@ -2318,7 +2321,7 @@ table {
 .electronSamelye .elecSamelye_middle>.elecSamelye_quatro>.quatroItem>.showScreen>#timeRange_Sam::-webkit-slider-runnable-track,
 .electronSamelye .elecSamelye_middle>.elecSamelye_quatro>.quatroItem>.showScreen>#deffRange_Sam::-webkit-slider-runnable-track {
     width: 100%; height: 8px;
-    background: repeating-linear-gradient(90deg, rgb(160, 160, 160) 2px, rgb(160, 160, 160) 4px, transparent 4px, transparent 20px);
+    background: repeating-linear-gradient(90deg, rgb(160, 160, 160) 2px, rgb(160, 160, 160) 4px, transparent 4px, transparent 25px);
     border-bottom: 3px solid rgb(160, 160, 160);
 }
 .electronSamelye .elecSamelye_middle>.elecSamelye_quatro>.quatroItem>.showScreen>#deffRange_Sam::-webkit-slider-runnable-track {
@@ -2332,4 +2335,16 @@ table {
     width: 0; height: 0;
     border: 4px solid transparent;
     border-bottom: 10px solid red;
+}
+
+.testBorder {
+    width: 200px; height: 200px;
+    background: #51aadd;
+    display: flex;
+    align-items: flex-end;
+}
+
+.testBorder>div {
+    background: red;
+    display: inline-block;
 }
